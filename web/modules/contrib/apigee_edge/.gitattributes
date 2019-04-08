@@ -1,0 +1,9 @@
+# Files.
+.*                              export-ignore
+phpcs.xml.dist                  export-ignore
+CONTRIBUTING.md                 export-ignore
+
+# Folders.
+.github                         export-ignore
+.travis                         export-ignore
+tests                           export-ignore
