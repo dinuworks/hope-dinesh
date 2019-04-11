@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Template for an FAQ node in Teaser display mode.
+ */
+#}
+{% extends '@apigee-cn/node/node.twig' %}
+{% block content %}
+  {% include '@apigee-cn/details/details.twig' with {
+    summary: label,
+    content: content
+  } %}
+{% endblock %}
