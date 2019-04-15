@@ -32,6 +32,7 @@
         "drupal-composer/drupal-scaffold": "^2.0.1",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
+        "drupal/config_split": "^1.4",
         "drupal/console": "^1",
         "drupal/core": "^8",
         "drupal/dropdown_language": "^2.2",

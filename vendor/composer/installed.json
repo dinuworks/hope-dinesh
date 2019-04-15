@@ -2114,6 +2114,77 @@
         }
     },
     {
+        "name": "drupal/config_filter",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/config_filter.git",
+            "reference": "8.x-1.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.4.zip",
+            "reference": "8.x-1.4",
+            "shasum": "4b2b7f4dfc8358212f9e25f63dcc77cc2c1dcf6c"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "suggest": {
+            "drupal/config_split": "Split site configuration for different environments."
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.4",
+                "datestamp": "1542184982",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Fabian Bircher",
+                "homepage": "https://www.drupal.org/u/bircher",
+                "email": "opensource@fabianbircher.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Nuvole Web",
+                "homepage": "http://nuvole.org",
+                "email": "info@nuvole.org",
+                "role": "Maintainer"
+            },
+            {
+                "name": "pescetti",
+                "homepage": "https://www.drupal.org/user/436244"
+            }
+        ],
+        "description": "Config Filter allows other modules to interact with a ConfigStorage through filter plugins.",
+        "homepage": "https://www.drupal.org/project/config_filter",
+        "keywords": [
+            "Drupal",
+            "configuration",
+            "configuration management"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/config_filter",
+            "issues": "https://www.drupal.org/project/issues/config_filter",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
+        }
+    },
+    {
         "name": "drupal/config_installer",
         "version": "1.8.0",
         "version_normalized": "1.8.0.0",
@@ -2159,6 +2230,80 @@
         "homepage": "https://www.drupal.org/project/config_installer",
         "support": {
             "source": "https://git.drupalcode.org/project/config_installer"
+        }
+    },
+    {
+        "name": "drupal/config_split",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/config_split.git",
+            "reference": "8.x-1.4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.4.zip",
+            "reference": "8.x-1.4",
+            "shasum": "938ea6c88834aa88bb310740758e56c1800e535b"
+        },
+        "require": {
+            "drupal/config_filter": "*",
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.4",
+                "datestamp": "1537971780",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Fabian Bircher",
+                "homepage": "https://www.drupal.org/u/bircher",
+                "email": "opensource@fabianbircher.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Nuvole Web",
+                "homepage": "http://nuvole.org",
+                "email": "info@nuvole.org",
+                "role": "Maintainer"
+            },
+            {
+                "name": "pescetti",
+                "homepage": "https://www.drupal.org/user/436244"
+            }
+        ],
+        "description": "Configuration filter for importing and exporting extra config",
+        "homepage": "https://www.drupal.org/project/config_split",
+        "keywords": [
+            "Drupal",
+            "configuration",
+            "configuration management"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/config_split",
+            "issues": "https://www.drupal.org/project/issues/config_split",
+            "irc": "irc://irc.freenode.org/drupal-contribute"
         }
     },
     {
@@ -2832,6 +2977,55 @@
         "homepage": "https://www.drupal.org/project/default_content",
         "support": {
             "source": "https://git.drupalcode.org/project/default_content"
+        }
+    },
+    {
+        "name": "drupal/dropdown_language",
+        "version": "2.2.0",
+        "version_normalized": "2.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/dropdown_language.git",
+            "reference": "8.x-2.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/dropdown_language-8.x-2.2.zip",
+            "reference": "8.x-2.2",
+            "shasum": "78e9c73fe7414114eaf4884e23eac671c74e302f"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.2",
+                "datestamp": "1540134181",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "SKAUGHT",
+                "homepage": "https://www.drupal.org/user/297907"
+            }
+        ],
+        "description": "Provides a block with a Dropdown Language Switcher",
+        "homepage": "https://www.drupal.org/project/dropdown_language",
+        "support": {
+            "source": "https://git.drupalcode.org/project/dropdown_language"
         }
     },
     {
