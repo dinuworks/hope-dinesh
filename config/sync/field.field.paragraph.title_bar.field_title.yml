@@ -1,0 +1,21 @@
+uuid: 679db311-7085-41c6-a4ed-8286e3eb7aa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.title_bar
+_core:
+  default_config_hash: wEtkKLa1g62FA-_gD2HtI7ZS6f3oeMrb5cPQV0EKFfw
+id: paragraph.title_bar.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: title_bar
+label: 'Title bar title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

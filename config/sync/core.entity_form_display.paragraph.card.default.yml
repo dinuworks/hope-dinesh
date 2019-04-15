@@ -1,0 +1,55 @@
+uuid: af99c878-01fa-47c5-a7df-aeecc48b04d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card.field_image
+    - field.field.paragraph.card.field_link
+    - field.field.paragraph.card.field_text
+    - field.field.paragraph.card.field_title
+    - paragraphs.paragraphs_type.card
+  module:
+    - link
+    - media_library
+    - text
+_core:
+  default_config_hash: 5TR0Uywo8gIMTM4PQnM1idejjXgRs_Vo_3Xez636mqc
+id: paragraph.card.default
+targetEntityType: paragraph
+bundle: card
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: 'https://google.com'
+      placeholder_title: 'Read more'
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_text:
+    weight: 2
+    settings:
+      rows: 2
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

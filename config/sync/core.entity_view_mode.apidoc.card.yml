@@ -1,0 +1,12 @@
+uuid: c2d7a149-1c93-4fc2-94e4-aec72eeb1b75
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_edge_apidocs
+_core:
+  default_config_hash: 88hngbPrNAK6uvrdhTIEF1it5Bc9e5_FQsU3pQpQ6rY
+id: apidoc.card
+label: Card
+targetEntityType: apidoc
+cache: true

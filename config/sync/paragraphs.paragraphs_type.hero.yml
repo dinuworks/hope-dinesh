@@ -1,0 +1,11 @@
+uuid: 4a0c466c-ba5a-4408-93b6-40b96e4b1018
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HIU839TxiaBbfMDEPb1SxJgIyi2YEjDbWjldf3XJU3k
+id: hero
+label: Hero
+icon_uuid: null
+description: '<em>Hero</em> contains a background image, title, summary, and link(s). The background image is scaled to fill the browser''s width. <em>Hero</em> is designed to be used as an alternative to the standard "Page title" block and can be used via the "Header" field, where available, or via the custom <em>Hero block</em> type.'
+behavior_plugins: {  }

@@ -1,0 +1,17 @@
+uuid: 2e2f78cc-81ad-4289-b3c2-7777f399797b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kci5PlA-2QFH280ZUUUwgEY5LoPbxi91XWQwxeY9pLE
+name: 7_4_1982x1133
+label: '7:4 Ratio - Max 1982 x 1133'
+effects:
+  163a900f-cae7-429d-993a-f120a17c0582:
+    uuid: 163a900f-cae7-429d-993a-f120a17c0582
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1982
+      height: 1133
+      anchor: center-center

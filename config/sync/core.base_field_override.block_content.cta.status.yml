@@ -1,0 +1,22 @@
+uuid: 73338cc1-f30a-4725-b468-731343995432
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+id: block_content.cta.status
+field_name: status
+entity_type: block_content
+bundle: cta
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

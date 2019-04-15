@@ -1,0 +1,11 @@
+uuid: c8f78358-ac8d-43ed-a3c2-398a7072ec61
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bG-uBOQWNs1qRBSYBBS8-wtj5DUNu939CGF9bL7A6LA
+id: button
+label: 'Button link'
+icon_uuid: null
+description: 'A <em>Button link</em> contains a URL, link text, and a button style, and is typically used within a <em>Button group</em>.'
+behavior_plugins: {  }

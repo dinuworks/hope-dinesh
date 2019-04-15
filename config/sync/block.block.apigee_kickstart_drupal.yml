@@ -1,0 +1,22 @@
+uuid: 08fa3eb9-9b89-40b7-bba7-c75abd4ba4ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apigee_kickstart
+_core:
+  default_config_hash: JKEKCG-Dir-2WbaTFY3XlWrE4iio42RPOYzLnUfg4Gk
+id: apigee_kickstart_drupal
+theme: apigee_kickstart
+region: copyright
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

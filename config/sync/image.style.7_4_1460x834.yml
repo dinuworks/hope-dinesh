@@ -1,0 +1,17 @@
+uuid: f76d3f2a-19ba-44c7-bcb1-2ab131940844
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zznkBfMdzsPL7e3nFIhz0Vd3SMiQb_NfxDe0h2UKpis
+name: 7_4_1460x834
+label: '7:4 Ratio - Max 1460 x 834'
+effects:
+  731f269b-15ac-4f27-b08a-b4e6140df5f6:
+    uuid: 731f269b-15ac-4f27-b08a-b4e6140df5f6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1460
+      height: 834
+      anchor: center-center

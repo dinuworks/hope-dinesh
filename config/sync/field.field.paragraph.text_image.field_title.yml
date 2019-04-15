@@ -1,0 +1,21 @@
+uuid: 29c9fe1c-88d8-49a6-8c05-9bb01e48865c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.text_image
+_core:
+  default_config_hash: HiP6IUaut17w0F1XIG3QK1E_8Hxia4bYT1W_DBew-M8
+id: paragraph.text_image.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: text_image
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

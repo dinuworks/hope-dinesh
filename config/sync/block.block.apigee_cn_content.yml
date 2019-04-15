@@ -1,0 +1,22 @@
+uuid: a111f369-8043-4224-b06e-d08ab04149c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: ggnuEW_IIZUjR7RoTywSU3OsBvr9FU2FuXk401fnFUU
+id: apigee_cn_content
+theme: apigee_cn
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: e7d6766d-9efd-42f0-9c31-626d3310ca86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blockquote_source
+    - paragraphs.paragraphs_type.blockquote
+_core:
+  default_config_hash: S7YpW47383__rPRrChshLdeUpmFVAjTFgIggfAGBKI0
+id: paragraph.blockquote.field_blockquote_source
+field_name: field_blockquote_source
+entity_type: paragraph
+bundle: blockquote
+label: Source
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

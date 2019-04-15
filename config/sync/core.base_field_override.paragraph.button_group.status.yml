@@ -1,0 +1,22 @@
+uuid: 220fcecb-6145-4969-ba10-04c1ceb2223e
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.button_group
+id: paragraph.button_group.status
+field_name: status
+entity_type: paragraph
+bundle: button_group
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

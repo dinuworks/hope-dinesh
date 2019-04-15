@@ -1,0 +1,10 @@
+uuid: 1d25372e-38ea-406e-a62e-466194d6fda4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: La5YV5p5XbD3raZb8VBvBBkHK-3hjJ2w2oeWwZ8bV0g
+id: title_bar
+label: 'Title bar block'
+revision: 1
+description: 'A <em>Title bar</em> block, which utilizes a Paragraph by the same name, contains a title, summary, and icon.'

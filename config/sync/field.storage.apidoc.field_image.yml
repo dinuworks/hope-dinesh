@@ -1,0 +1,22 @@
+uuid: a43d3e1d-47f6-4650-897c-aaa9461f13e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_edge_apidocs
+    - media
+_core:
+  default_config_hash: fSiHZX4LPpkivkQfnvn96bnBlLF1koJARmJ8fLNAxzw
+id: apidoc.field_image
+field_name: field_image
+entity_type: apidoc
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

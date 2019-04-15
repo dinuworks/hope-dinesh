@@ -1,0 +1,22 @@
+uuid: aed45cc2-8bc1-44e4-ac08-99607b7aafbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: gDm3tMP0Sov2Wq6_Cg8eLl38_cX7LZcDn3DoIAu2CJ8
+id: apigee_cn_help
+theme: apigee_cn
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

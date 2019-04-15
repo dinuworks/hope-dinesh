@@ -1,0 +1,23 @@
+uuid: 61d40f94-6b72-4ca0-b386-195b7c6188b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - paragraphs.paragraphs_type.callout
+  module:
+    - fontawesome
+_core:
+  default_config_hash: 7LQn3LpvMOcYOmUikQiPeU9jIr66Z6q-xy2wDp8w4aE
+id: paragraph.callout.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: callout
+label: 'Callout Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: fontawesome_icon

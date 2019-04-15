@@ -1,0 +1,33 @@
+uuid: 9f2c39cb-80c9-4326-958c-ee43d0fc5b0c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:title_bar:a94fbb45-8667-451a-b173-cb50cc6faabb'
+  module:
+    - block_content
+    - system
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: 3uMVfYNAvxnAvMit04py0l32wm30tOEF0ttvKQLcSyM
+id: apigee_cn_title_bar_apis
+theme: apigee_cn
+region: header
+weight: -11
+provider: null
+plugin: 'block_content:a94fbb45-8667-451a-b173-cb50cc6faabb'
+settings:
+  id: 'block_content:a94fbb45-8667-451a-b173-cb50cc6faabb'
+  label: 'Title bar: APIs'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /apis
+    negate: false
+    context_mapping: {  }

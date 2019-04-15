@@ -1,0 +1,23 @@
+uuid: f4e5274c-9a26-4e09-81fb-351b384fc7c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_style
+    - paragraphs.paragraphs_type.card_group
+  module:
+    - options
+_core:
+  default_config_hash: bOXM8M9Voi2r5U5wtV37k_U1P89ufxoVzsFk56qGzRw
+id: paragraph.card_group.field_background_style
+field_name: field_background_style
+entity_type: paragraph
+bundle: card_group
+label: 'Card group background style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

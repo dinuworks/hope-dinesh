@@ -1,0 +1,22 @@
+uuid: c8671a4a-654b-4cd6-bd1c-5c5657eb830e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: QyKPuEBcqqImeATWqLLUH7-AovbqOqZS4n86SHyVLWA
+id: apigee_cn_messages
+theme: apigee_cn
+region: content
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

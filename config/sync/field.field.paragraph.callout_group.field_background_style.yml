@@ -1,0 +1,23 @@
+uuid: bb68de10-07e0-450f-a717-1c5d6892a8f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_style
+    - paragraphs.paragraphs_type.callout_group
+  module:
+    - options
+_core:
+  default_config_hash: FSHyRd3KFnlnT3sBzaYN5tPrVSYqP2FdlhpeUViQXOk
+id: paragraph.callout_group.field_background_style
+field_name: field_background_style
+entity_type: paragraph
+bundle: callout_group
+label: 'Callout group background style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

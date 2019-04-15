@@ -1,0 +1,14 @@
+uuid: 594d8496-a818-4c32-a1f3-a565141329bd
+name: 'Apigee D8 Dev Portal'
+mail: david.myburgh@mphasis.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

@@ -1,0 +1,31 @@
+uuid: e958baa2-3ad4-4416-b283-93e3afeb6f9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.apidoc.field_image
+    - media.type.image
+  module:
+    - apigee_edge_apidocs
+_core:
+  default_config_hash: 4qtx4aQOmJjfVlpP4Lp8ssEqwWxG52HltLiZ3fmfSEw
+id: apidoc.apidoc.field_image
+field_name: field_image
+entity_type: apidoc
+bundle: apidoc
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

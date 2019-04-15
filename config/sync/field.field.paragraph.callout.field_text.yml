@@ -1,0 +1,23 @@
+uuid: 5f3dae0e-78ff-4f9c-a394-91faf2308f76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.callout
+  module:
+    - text
+_core:
+  default_config_hash: j_U2tvpwCQPCJ3cmZa8EvYaT19WyH4J_aTqQBFe9vhk
+id: paragraph.callout.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: callout
+label: 'Callout Summary'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

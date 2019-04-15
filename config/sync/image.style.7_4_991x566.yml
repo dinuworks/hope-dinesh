@@ -1,0 +1,17 @@
+uuid: c3d2ff54-6b4d-4d1d-8d63-7cd443cfcd1f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: eiRGVrN3lUaqCDC8-S_0cD5vKpFMFN0qc6SbV3jB3K8
+name: 7_4_991x566
+label: '7:4 Ratio - Max 991 x 566'
+effects:
+  06a66c90-f9e9-4dbf-8ff7-18f0d17d172a:
+    uuid: 06a66c90-f9e9-4dbf-8ff7-18f0d17d172a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 991
+      height: 566
+      anchor: center-center

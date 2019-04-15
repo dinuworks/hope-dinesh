@@ -1,0 +1,26 @@
+uuid: df36c9d4-a377-4358-b34d-faab58dfd02c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: XDAOoFhGp6MI8_g48zOnqon3nnh7LlU1PaI2dYGoNhU
+id: apigee_cn_menu_account
+theme: apigee_cn
+region: navbar_right
+weight: -11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

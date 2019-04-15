@@ -1,0 +1,20 @@
+uuid: 07dc97e5-e2e6-44b7-bd85-9402aab97bad
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.forums
+  module:
+    - path
+id: taxonomy_term.forums.path
+field_name: path
+entity_type: taxonomy_term
+bundle: forums
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,17 @@
+uuid: 7d15eeb5-f91c-4249-b628-85fad6dd9854
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: TBpYQtOZVyB1xokLkVpvuSWhxWvuKCfXVBCLr_DbhBo
+name: 7_4_700x400
+label: '7:4 Ratio - Max 700 x 400'
+effects:
+  73ed9e8e-9274-4c85-96cb-d84cab1de591:
+    uuid: 73ed9e8e-9274-4c85-96cb-d84cab1de591
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 400
+      anchor: center-center

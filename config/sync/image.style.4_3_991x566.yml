@@ -1,0 +1,17 @@
+uuid: 879ef21f-1d63-4690-beae-a17daffe99fd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nQmW_ilRa7PMdDi3CdAptY4PKucAP6X7bpnZ0xFdI0I
+name: 4_3_991x566
+label: '4:3 Ratio - Max 991 x 566'
+effects:
+  ad8ec3e0-599a-4ec7-b2b5-0e8a7533fdbb:
+    uuid: ad8ec3e0-599a-4ec7-b2b5-0e8a7533fdbb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 991
+      height: 566
+      anchor: center-center

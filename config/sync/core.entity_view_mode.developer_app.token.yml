@@ -1,0 +1,10 @@
+uuid: 0861861a-1c07-42e8-bc29-e336313c0757
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_edge
+id: developer_app.token
+label: Token
+targetEntityType: developer_app
+cache: true

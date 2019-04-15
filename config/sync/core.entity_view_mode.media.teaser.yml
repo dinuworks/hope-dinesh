@@ -1,0 +1,12 @@
+uuid: 14de2064-3044-456f-afd7-dbf29ce0a0c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dNqYlYCeQz-Tqg-30xGLais5kPzkB00ky3JZjqWmZkE
+id: media.teaser
+label: Teaser
+targetEntityType: media
+cache: true

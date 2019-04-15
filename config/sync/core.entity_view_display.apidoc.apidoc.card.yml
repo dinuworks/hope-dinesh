@@ -1,0 +1,47 @@
+uuid: c2125f24-29a7-4039-978a-c39656aee9a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.apidoc.card
+    - field.field.apidoc.apidoc.field_categories
+    - field.field.apidoc.apidoc.field_image
+  module:
+    - apigee_edge_apidocs
+    - text
+_core:
+  default_config_hash: b8iO5UYa_I28T5lhytrtqY7LmVbZVR2_AgP-ejex6EE
+id: apidoc.apidoc.card
+targetEntityType: apidoc
+bundle: apidoc
+mode: card
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: card_small
+      link: false
+    third_party_settings: {  }
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  api_product: true
+  field_categories: true
+  langcode: true
+  spec: true

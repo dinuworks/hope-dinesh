@@ -1,0 +1,44 @@
+uuid: bd66a369-c6c7-42c3-bbf3-16813b17d228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.apidoc.apidoc.field_categories
+    - field.field.apidoc.apidoc.field_image
+  module:
+    - apigee_edge_apidocs
+    - swagger_ui_formatter
+_core:
+  default_config_hash: '-Vyus5vGTAtFZDALi3gfKE0cAIRxaKjl7kZcgmSZ0Tw'
+id: apidoc.apidoc.default
+targetEntityType: apidoc
+bundle: apidoc
+mode: default
+content:
+  spec:
+    label: hidden
+    type: swagger_ui_file
+    weight: 0
+    region: content
+    settings:
+      validator: default
+      validator_url: ''
+      doc_expansion: list
+      show_top_bar: 0
+      sort_tags_by_name: 0
+      supported_submit_methods:
+        get: 0
+        put: 0
+        post: 0
+        delete: 0
+        options: 0
+        head: 0
+        patch: 0
+    third_party_settings: {  }
+hidden:
+  api_product: true
+  description: true
+  field_categories: true
+  field_image: true
+  langcode: true
+  name: true

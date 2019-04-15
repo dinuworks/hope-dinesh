@@ -1,0 +1,26 @@
+uuid: 1ae39e15-fb17-41fb-a1ea-392eaef19849
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: y9rrcd1mfCRecXXHoRNgKsdQ_YNtjXvlzeV93gSTAAE
+id: apigee_cn_menu_footer
+theme: apigee_cn
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 1
+visibility: {  }

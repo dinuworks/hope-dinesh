@@ -1,0 +1,22 @@
+uuid: 96e5ac38-a65d-4ce0-8589-963f126255d0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: IqfPCmtiybYidEzw9PHLZeVbxoVX1Z7SvdNV4LKvB5M
+id: apigee_cn_tabs
+theme: apigee_cn
+region: tasks
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

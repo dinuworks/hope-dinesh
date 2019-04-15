@@ -1,0 +1,17 @@
+uuid: 6efd9b32-6ead-49a5-8b54-35c011e52bfb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: G4IiM7DzovskLuj2oIb53uWTvJaUwUnSqccW3zoUDgo
+name: 1_1_80x80
+label: '1:1 Ratio - 80 x 80'
+effects:
+  46ed3ea6-bb6a-40a0-98d9-4586b214e5e2:
+    uuid: 46ed3ea6-bb6a-40a0-98d9-4586b214e5e2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 80
+      height: 80
+      anchor: center-center

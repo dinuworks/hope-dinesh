@@ -1,0 +1,11 @@
+uuid: 3906ef1b-69e4-404e-9e59-02aa620009ee
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: era0hXA-zCdX8zf_BKgd96f40BonKtVTZF8hPaVGFD4
+id: cta
+label: 'Call to Action'
+icon_uuid: null
+description: 'A <em>Call to Action</em> contains a title, summary, and button links. <em>Call to Action</em> can be used via the "Content" field, where available, or via the custom <em>Call to Action</em> block type.'
+behavior_plugins: {  }

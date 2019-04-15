@@ -1,0 +1,23 @@
+uuid: 30b8e8d3-9ecf-4050-953b-96261a97f4a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: yv359vBBREbLDLfsLz4AzlhxV9XQ3oxcZKPnTrsLvzo
+id: block_content.field_title_bar
+field_name: field_title_bar
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+uuid: a49a94ec-fd61-47f8-9320-9e4f746d3ca2
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_edge_apidocs
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: apidoc.apidoc
+target_entity_type_id: apidoc
+target_bundle: apidoc
+default_langcode: site_default
+language_alterable: false

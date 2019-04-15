@@ -1,0 +1,27 @@
+uuid: 382ee77a-5211-4f85-b8e3-c232285f2db8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.title_bar
+    - field.field.block_content.title_bar.field_title_bar
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: gXroN9Lc2lKwSurqSNC8SeEhZcpNpeevMxs8pDMbjsM
+id: block_content.title_bar.default
+targetEntityType: block_content
+bundle: title_bar
+mode: default
+content:
+  field_title_bar:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+hidden:
+  langcode: true

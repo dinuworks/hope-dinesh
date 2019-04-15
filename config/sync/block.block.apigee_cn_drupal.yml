@@ -1,0 +1,22 @@
+uuid: 37ccfc9a-3d47-4a77-9dfb-017ddf70f1bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: dTvr1vyaOV_3avVdnPMX0u4s024HKmINyczKh-CJKgc
+id: apigee_cn_drupal
+theme: apigee_cn
+region: copyright
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

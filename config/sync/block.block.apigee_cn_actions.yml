@@ -1,0 +1,20 @@
+uuid: f3931bce-688e-4d59-a277-1051bcbd836e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - apigee_cn
+_core:
+  default_config_hash: L3HJVBwcncWRlvnL7L_JAH_XLDBOdFB-cXH6jKVosQE
+id: apigee_cn_actions
+theme: apigee_cn
+region: tasks
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,10 @@
+uuid: 53b9fb90-4fc9-4b4f-8df2-fb7907d6a8ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - apigee_edge_apidocs
+id: apidoc.token
+label: Token
+targetEntityType: apidoc
+cache: true
