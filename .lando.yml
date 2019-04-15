@@ -1,0 +1,20 @@
+name: d8-apigee-kickstart
+recipe: pantheon
+config:
+  framework: drupal8
+  site: d8-apigee-kickstart
+  id: 24f442f0-0989-4ca4-b53e-e0889f51342e
+  webroot: web
+  xdebug: true
+  conf: 
+    php: .vscode/php.ini 
+proxy:
+  adminer:
+    - adminer.d8-apigee-kickstart.lndo.site
+services:
+  adminer:
+    type: compose
+    services:
+      image: dehy/adminer
+      command: /bin/s6-svscan /etc/services.d
+    portforward: true
