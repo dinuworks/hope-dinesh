@@ -80,7 +80,6 @@ theme:
   bartik: 0
   seven: 0
   radix: 0
-  apigee_kickstart: 0
   apigee_cn: 0
 profile: apigee_devportal_kickstart
 _core:
