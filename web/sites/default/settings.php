@@ -23,6 +23,29 @@ $config_directories = array(
   CONFIG_SYNC_DIRECTORY => dirname(DRUPAL_ROOT) . '/config/sync',
 );
 
+// Automatically enable the correct config_split based on the Pantheon environment.
+if (!defined('PANTHEON_ENVIRONMENT')) {
+  $config['config_split.config_split.dev']['status'] = TRUE;
+}
+// Pantheon Env Specific Config
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  switch ($_ENV['PANTHEON_ENVIRONMENT']) {
+    case 'live':
+      $config['config_split.config_split.prod']['status'] = TRUE;
+      break;
+    case 'test':
+      $config['config_split.config_split.stage']['status'] = TRUE;
+      break;
+    case 'dev':
+    case 'lando':
+      $config['config_split.config_split.dev']['status'] = TRUE;
+      break;
+    default:
+      $config['config_split.config_split.dev']['status'] = TRUE;
+      break;
+  }
+ }
+
 /**
  * If there is a local settings file, then include it
  */
