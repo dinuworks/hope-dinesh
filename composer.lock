@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86c69ab4f6fa3cb5e7f1982049c3e373",
+    "content-hash": "4a1b2955369648a97690fde7acaa023a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1895,8 +1895,7 @@
             "homepage": "https://www.drupal.org/project/apigee_edge",
             "support": {
                 "source": "https://git.drupalcode.org/project/apigee_edge"
-            },
-            "time": "2019-04-08T05:50:28+00:00"
+            }
         },
         {
             "name": "drupal/better_exposed_filters",
@@ -2765,6 +2764,53 @@
             }
         },
         {
+            "name": "drupal/dropdown_language",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/dropdown_language.git",
+                "reference": "8.x-2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dropdown_language-8.x-2.2.zip",
+                "reference": "8.x-2.2",
+                "shasum": "78e9c73fe7414114eaf4884e23eac671c74e302f"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.2",
+                    "datestamp": "1540134181",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "SKAUGHT",
+                    "homepage": "https://www.drupal.org/user/297907"
+                }
+            ],
+            "description": "Provides a block with a Dropdown Language Switcher",
+            "homepage": "https://www.drupal.org/project/dropdown_language",
+            "support": {
+                "source": "https://git.drupalcode.org/project/dropdown_language"
+            }
+        },
+        {
             "name": "drupal/drupal-driver",
             "version": "v1.4.0",
             "source": {
@@ -3264,8 +3310,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/radix",
                 "issues": "https://www.drupal.org/project/issues/radix"
-            },
-            "time": "2019-04-06T08:58:19+00:00"
+            }
         },
         {
             "name": "drupal/simple_block",
@@ -3375,8 +3420,7 @@
             "homepage": "https://www.drupal.org/project/swagger_ui_formatter",
             "support": {
                 "source": "https://git.drupalcode.org/project/swagger_ui_formatter"
-            },
-            "time": "2019-04-04T12:33:53+00:00"
+            }
         },
         {
             "name": "drupal/token",
