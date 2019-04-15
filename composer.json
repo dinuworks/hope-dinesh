@@ -35,6 +35,7 @@
         "drupal/config_split": "^1.4",
         "drupal/console": "^1",
         "drupal/core": "^8",
+        "drupal/devel": "^2.0",
         "drupal/dropdown_language": "^2.2",
         "drupal/simple_block": "^1.0@beta",
         "drush-ops/behat-drush-endpoint": "^9.3",

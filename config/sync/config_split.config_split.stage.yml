@@ -1,0 +1,16 @@
+uuid: 4681ec51-52ce-4409-a695-74571eedb761
+langcode: en
+status: false
+dependencies: {  }
+id: stage
+label: Stage
+description: 'Staging/UAT environment specific configuration.'
+folder: ../config/splits/stage
+module: {  }
+theme: {  }
+blacklist:
+  - system.performance
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 1

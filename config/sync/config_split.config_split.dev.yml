@@ -1,0 +1,17 @@
+uuid: abb9410a-4e92-437c-b8bd-7393d5daa37b
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: Dev
+description: 'Development environment specific configuration, including local setups.'
+folder: ../config/splits/dev
+module:
+  devel: 0
+  kint: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

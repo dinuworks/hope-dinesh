@@ -1,0 +1,16 @@
+uuid: b6092fbd-2ce1-4b50-9788-8a3ce0616cab
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: Prod
+description: 'Production environment specific configuration.'
+folder: ../config/splits/prod
+module: {  }
+theme: {  }
+blacklist:
+  - system.performance
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 2
