@@ -7,7 +7,7 @@
  | for your application. See https://github.com/JeffreyWay/laravel-mix.
  |
  */
-const proxy = 'http://dpkickstart.local';
+const proxy = 'http://d8-apigee-kickstart.lndo.site:8000';
 const mix = require('laravel-mix');
 
 /*

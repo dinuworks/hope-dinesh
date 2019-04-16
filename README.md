@@ -1,50 +1,28 @@
-# Example Drops 8 Composer
+# Apigee Kickstart Drupal 8 Dev Portal
 
-[![CircleCI](https://circleci.com/gh/pantheon-systems/example-drops-8-composer.svg?style=shield)](https://circleci.com/gh/pantheon-systems/example-drops-8-composer)
-[![Pantheon example-drops-8-composer](https://img.shields.io/badge/dashboard-drops_8-yellow.svg)](https://dashboard.pantheon.io/sites/c401fd14-f745-4e51-9af2-f30b45146a0c#dev/code) 
-[![Dev Site example-drops-8-composer](https://img.shields.io/badge/site-drops_8-blue.svg)](http://dev-example-drops-8-composer.pantheonsite.io/)
-
-This repository is a start state for a Composer-based Drupal workflow with Pantheon. It is meant to be copied by the the [Terminus Build Tools Plugin](https://github.com/pantheon-systems/terminus-build-tools-plugin) which will set up for you a brand new
-
-* GitHub repo
-* Free Pantheon sandbox site
-* A CircleCI configuration to run tests and push from the source repo (GitHub) to Pantheon.
-
-For more background information on this style of workflow, see the [Pantheon documentation](https://pantheon.io/docs/guides/github-pull-requests/).
+This site is built using Pantheon's [Example Drops 8](https://github.com/pantheon-systems/drops-8) composer build, with [Apigee Developer Portal Kickstart](https://www.drupal.org/project/apigee_devportal_kickstart) added in as the default profile. The default theme provided by the Apigee profile was copied and renamed to be used as the new default theme that can be customized as needed.
 
 
 ## Installation
 
 ### Prerequisites
 
-Before running the `terminus build:project:create` command, make sure you have all of the prerequisites:
+Before running this site, make sure you have all of the prerequisites:
 
 * [A Pantheon account](https://dashboard.pantheon.io/register)
 * [Terminus, the Pantheon command line tool](https://pantheon.io/docs/terminus/install/)
 * [The Terminus Build Tools Plugin](https://github.com/pantheon-systems/terminus-build-tools-plugin)
-* An account with GitHub and an authentication token capable of creating new repos.
-* An account with CircleCI and an authentication token.
+* [Docker CE](https://docs.docker.com/install/)
+* [Lando, local LAMP stack](https://devwithlando.io)
+* [Node v10.x+](https://nodejs.org)
 
-You may find it easier to export the GitHub and CircleCI tokens as variables on your command line where the Build Tools Plugin can detect them automatically:
+### Setup
 
-```
-export GITHUB_TOKEN=[REDACTED]
-export CIRCLE_TOKEN=[REDACTED]
-```
+1. Clone the repo to your local and run `composer install` in the root folder.
 
-### One command setup:
+2. In the *web/themes/custom/apigee_cn* folder, run `npm install` to install all the requirements for building the theme from its components.
 
-Once you have all of the prerequisites in place, you can create your copy of this repo with one command:
-
-```
-terminus build:project:create pantheon-systems/example-drops-8-composer my-new-site --team="Agency Org Name"
-```
-
-The parameters shown here are:
-
-* The name of the source repo, `pantheon-systems/example-drops-8-composer`. If you are interest in other source repos like WordPress, see the [Terminus Build Tools Plugin](https://github.com/pantheon-systems/terminus-build-tools-plugin).
-* The machine name to be used by both the soon-to-be-created Pantheon site and GitHub repo. Change `my-new-site` to something meaningful for you.
-* The `--team` flag is optional and refers to a Pantheon organization. Pantheon organizations are often web development agencies or Universities. Setting this parameter causes the newly created site to go within the given organization. Run the Terminus command `terminus org:list` to see the organizations you are a member of. There might not be any.
+3. To get your local LAMP stack up and running with Lando, run `lando start` from the root folder. This will download all the required docker containers and spin up your local stack. Take a look at .lando.yml if you need to customize anything in the docker setup.
 
 
 ## Important files and directories
@@ -55,24 +33,26 @@ Pantheon will serve the site from the `/web` subdirectory due to the configurati
 
 #### `/config`
 
-One of the directories moved to the git root is `/config`. This directory holds Drupal's `.yml` configuration files. In more traditional repo structure these files would live at `/sites/default/config/`. Thanks to [this line in `settings.php`](https://github.com/pantheon-systems/example-drops-8-composer/blob/54c84275cafa66c86992e5232b5e1019954e98f3/web/sites/default/settings.php#L19), the config is moved entirely outside of the web root.
+One of the directories moved to the git root is `/config`. This directory holds Drupal's `.yml` configuration files. In  a more traditional repo structure these files would live at `/sites/default/config/`. Thanks to [this line in `settings.php`](https://github.com/pantheon-systems/example-drops-8-composer/blob/54c84275cafa66c86992e5232b5e1019954e98f3/web/sites/default/settings.php#L19), the config is moved entirely outside of the web root.
+
+We are using [Config Split](https://www.drupal.org/project/config_split) to manage config per environment. If you are not familiar with Config Split, you should think of it as a way to ENABLE modules and settings when required, instead of DISABLING things. This means that for anything that needs to be conditionally enabled on an environment, the default config (*/config/sync*) should have that thing disabled e.g. Devel module is disabled by default, and only enabled in the dev environment's split (*/config/splits/dev*). Another example is for css and js aggregation, which we want disabled in dev, but enabled for stage and prod. So the default state is disabled for those two settings, and then we only enable them in the stage and prod splits.
 
 ### `composer.json`
 
-If you are just browsing this repository on GitHub, you may notice that the files of Drupal core itself are not included in this repo.  That is because Drupal core and contrib modules are installed via Composer and ignored in the `.gitignore` file. Specific contrib modules are added to the project via `composer.json` and `composer.lock` keeps track of the exact version of each modules (or other dependency). Modules, and themes are placed in the correct directories thanks to the `"installer-paths"` section of `composer.json`. `composer.json` also includes instructions for `drupal-scaffold` which takes care of placing some individual files in the correct places like `settings.pantheon.php`.
+This site uses Composer to add modules, themes, and their dependencies. Currently, we are committing the downloaded dependencies (*/web/core*, */web/modules*, */web/themes*, */vendor*) as we do not currently have a build step or a CI setup. That may come at a later date.
 
-## Behat tests
+### `settings.php & settings.pantheon.php`
 
-So that CircleCI will have some test to run, this repository includes a configuration of Behat tests. You can add your own `.feature` files within `/tests/features/`.
+Any custom settings should go in `settings.php` AFTER the include for the `settings.pantheon.php` file. Do not edit the Pantheon file as that could be updated at some point, wiping out your customizations.
+
+We currently have the config_split switching mechanism here, as well as an import for `settings.local.php` where you can create your own local overrides e.g. database connection. **DO NOT COMMIT settings.local.php!**
+
 
 ## Updating your site
 
 When using this repository to manage your Drupal site, you will no longer use the Pantheon dashboard to update your Drupal version. Instead, you will manage your updates using Composer. Ensure your site is in Git mode, clone it locally, and then run composer commands from there.  Commit and push your files back up to Pantheon as usual.
 
 
+## Theming
 
-
-
-
-
-
+Check the [README.md](web/themes/custom/apigee_cn/README.md) file in the theme folder for more information about modifying the theme.
