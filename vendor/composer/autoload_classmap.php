@@ -4950,6 +4950,7 @@ return array(
     'Twig\\Node\\Expression\\Filter\\DefaultFilter' => $vendorDir . '/twig/twig/src/Node/Expression/Filter/DefaultFilter.php',
     'Twig\\Node\\Expression\\FunctionExpression' => $vendorDir . '/twig/twig/src/Node/Expression/FunctionExpression.php',
     'Twig\\Node\\Expression\\GetAttrExpression' => $vendorDir . '/twig/twig/src/Node/Expression/GetAttrExpression.php',
+    'Twig\\Node\\Expression\\InlinePrint' => $vendorDir . '/twig/twig/src/Node/Expression/InlinePrint.php',
     'Twig\\Node\\Expression\\MethodCallExpression' => $vendorDir . '/twig/twig/src/Node/Expression/MethodCallExpression.php',
     'Twig\\Node\\Expression\\NameExpression' => $vendorDir . '/twig/twig/src/Node/Expression/NameExpression.php',
     'Twig\\Node\\Expression\\NullCoalesceExpression' => $vendorDir . '/twig/twig/src/Node/Expression/NullCoalesceExpression.php',
