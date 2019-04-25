@@ -17072,8 +17072,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/devportal-kickstart/web/themes/custom/apigee_cn/src/js/apigee-cn.script.js */"./src/js/apigee-cn.script.js");
-module.exports = __webpack_require__(/*! /var/www/html/devportal-kickstart/web/themes/custom/apigee_cn/src/sass/apigee-cn.style.scss */"./src/sass/apigee-cn.style.scss");
+__webpack_require__(/*! /var/www/html/apigee/d8-apigee-kick-pantheon/web/themes/custom/apigee_cn/src/js/apigee-cn.script.js */"./src/js/apigee-cn.script.js");
+module.exports = __webpack_require__(/*! /var/www/html/apigee/d8-apigee-kick-pantheon/web/themes/custom/apigee_cn/src/sass/apigee-cn.style.scss */"./src/sass/apigee-cn.style.scss");
 
 
 /***/ })

@@ -43,6 +43,8 @@ $yellow:    #ffc107 !default;
 $green:     #53BE6D !default;
 $teal:      #20c997 !default;
 $cyan:      #17a2b8 !default;
+$cn-primary: #bf282e !default;
+$cn-primary-dark: #6e0004 !default;
 
 $colors: () !default;
 $colors: map-merge((
@@ -57,12 +59,14 @@ $colors: map-merge((
   "green":        $green,
   "teal":         $teal,
   "cyan":         $cyan,
+  "cn-primary":   $cn-primary,
+  "cn-primary-dark" : $cn-primary-dark,
   "white":        $white,
   "gray":         $gray-600,
   "gray-dark":    $gray-800
 ), $colors);
 
-$primary:       $blue !default;
+$primary:       $cn-primary !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -939,12 +943,12 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
 
 // Apigee cn Colorable Elements
 $theme-elements: (
-  "ak-header-color-bg":             var(--dark),
-  "ak-header-color":                var(--white),
+  "ak-header-color-bg":             var(--white),
+  "ak-header-color":                var(--dark),
   "ak-footer-color-bg":             var(--dark),
   "ak-footer-color":                var(--white),
-  "ak-accent-color":                var(--blue),
+  "ak-accent-color":                var(--cn-primary),
   "ak-accent-color-light":          var(--white),
-  "ak-accent-color-dark":           var(--blue-dark)
+  "ak-accent-color-dark":           var(--cn-primary-dark)
 ) !default;
 

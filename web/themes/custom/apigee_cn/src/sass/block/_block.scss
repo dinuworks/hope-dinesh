@@ -1,0 +1,12 @@
+// Block-specific styles.
+// -----------------------------------------------------------------------------
+
+// Language switcher (core)
+// ------------------------
+// Hide current language link.
+body.lang-en .language-switcher-language-url .en.nav-item {
+  display: none;
+}
+body.lang-fr .language-switcher-language-url .fr.nav-item {
+  display: none;
+}
