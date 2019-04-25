@@ -9,7 +9,7 @@ dependencies:
 id: languageswitcher_2
 theme: apigee_cn
 region: navbar_right
-weight: -10
+weight: -9
 provider: null
 plugin: 'language_block:language_interface'
 settings:
