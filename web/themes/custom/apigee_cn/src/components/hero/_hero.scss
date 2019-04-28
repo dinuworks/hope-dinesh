@@ -5,61 +5,30 @@
 }
 
 .hero__wrapper {
-  align-items: center;
-  display: grid;
-  justify-content: center;
-  max-height: 400px;
-  // 720 (15 + 276 + 414 + 15)
-  grid-template-columns:
-      [gutter-left] minmax(15px, 1fr)
-      [main] minmax(0, 276px)
-      [media] minmax(0, 414px)
-      [gutter-right] minmax(15px, 1fr);
-
-  // 960 (15 + 372 + 558 + 15)
-  @include media-breakpoint-up(lg) {
-    grid-template-columns:
-      [gutter-left] minmax(15px, 1fr)
-      [main] minmax(0, 372px)
-      [media] minmax(0, 558px)
-      [gutter-right] minmax(15px, 1fr);
-  }
-
-  // 1140 (15 + 440 + 670 + 15)
-  @include media-breakpoint-up(xl) {
-    grid-template-columns:
-    [gutter-left] minmax(15px, 1fr)
-    [main] minmax(0, 440px)
-    [media] minmax(0, 670px)
-    [gutter-right] minmax(15px, 1fr);
-  }
+  background-size: cover;
+  background-repeat: none;
+  background-position-y: center;
+  height: 400px;
 }
 
 .hero__content {
-  display: grid;
-  grid-column: main / media-end;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  text-align: center;
-  padding-right: 15px;
+  padding-left: 5%;
 
   @include media-breakpoint-up(md) {
-    text-align: left;
-    grid-column: main;
-    padding-right: 85px;
-  }
-}
-
-.hero__media {
-
-  @include media-breakpoint-up(md) {
-    grid-column: media / gutter-right-end;
+    padding-left: 25%;
   }
 
-  img {
-    @include media-breakpoint-up(md) {
-      height: 400px;
-      object-fit: cover;
-      width: 100%;
-    }
+  @include media-breakpoint-up(xl) {
+    padding-left: 50%;
+  }
+
+  h1 {
+    font-weight: 700;
   }
 }
