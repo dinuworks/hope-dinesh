@@ -45,6 +45,8 @@ $teal:      #20c997 !default;
 $cyan:      #17a2b8 !default;
 $cn-primary: #bf282e !default;
 $cn-primary-dark: #6e0004 !default;
+$cn_secondary: #2b415c !default;
+$cn_secondary_dark: #18364b !default;
 
 $colors: () !default;
 $colors: map-merge((
@@ -270,7 +272,7 @@ $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        400 !default;
 $headings-line-height:        1.175 !default;
-$headings-color:              inherit !default;
+$headings-color:              $cn_secondary !default;
 
 $display1-size:               4.5rem !default;
 $display2-size:               3.5rem !default;
