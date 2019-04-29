@@ -3,14 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
-    - image.style.7_4_1460x834
-    - image.style.7_4_1982x1133
-    - image.style.7_4_2920x1669
-    - image.style.7_4_350x200
-    - image.style.7_4_640x366
-    - image.style.7_4_700x400
-    - image.style.7_4_730x417
-    - image.style.7_4_991x566
+    - image.style.12_5_ratio_max_1460_x_608
+    - image.style.12_5_ratio_max_1982_x_826
+    - image.style.12_5_ratio_max_2920_x_1217
+    - image.style.12_5_ratio_max_350_x_146
+    - image.style.12_5_ratio_max_640_x_267
+    - image.style.12_5_ratio_max_700_x_292
+    - image.style.12_5_ratio_max_730_x_304
+    - image.style.12_5_ratio_max_991_x_413
 _core:
   default_config_hash: OupaRrACb2HU6xbkJkujZStnIDB9XWwof9_YZdtRXv8
 id: hero
@@ -23,13 +23,13 @@ image_style_mappings:
     image_mapping:
       sizes: '(min-width:992px) 57vw, 100vw'
       sizes_image_styles:
-        - 7_4_1460x834
-        - 7_4_1982x1133
-        - 7_4_2920x1669
-        - 7_4_350x200
-        - 7_4_640x366
-        - 7_4_700x400
-        - 7_4_730x417
-        - 7_4_991x566
+        - 12_5_ratio_max_700_x_292
+        - 12_5_ratio_max_1460_x_608
+        - 12_5_ratio_max_1982_x_826
+        - 12_5_ratio_max_2920_x_1217
+        - 12_5_ratio_max_350_x_146
+        - 12_5_ratio_max_640_x_267
+        - 12_5_ratio_max_730_x_304
+        - 12_5_ratio_max_991_x_413
 breakpoint_group: responsive_image
-fallback_image_style: 7_4_350x200
+fallback_image_style: 12_5_ratio_max_350_x_146

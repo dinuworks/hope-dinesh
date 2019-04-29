@@ -1,0 +1,15 @@
+uuid: c41d3e35-4631-471b-9643-c64d4b18b72e
+langcode: en
+status: true
+dependencies: {  }
+name: 12_5_ratio_max_700_x_292
+label: '12:5 Ratio - Max 700 x 292'
+effects:
+  e38f3562-0f81-4bca-90ac-ea4a283f1ce3:
+    uuid: e38f3562-0f81-4bca-90ac-ea4a283f1ce3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 292
+      anchor: center-center

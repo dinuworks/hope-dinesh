@@ -1,0 +1,15 @@
+uuid: 5fb670da-e913-4ffc-bbcb-e5e375cae755
+langcode: en
+status: true
+dependencies: {  }
+name: 12_5_ratio_max_640_x_267
+label: '12:5 Ratio - Max 640 x 267'
+effects:
+  df5f4ad3-1517-4207-a297-b7bfc8ce527f:
+    uuid: df5f4ad3-1517-4207-a297-b7bfc8ce527f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 267
+      anchor: center-center

@@ -1,0 +1,15 @@
+uuid: aa3e3a5f-9996-4da1-a345-19e1b3788bd4
+langcode: en
+status: true
+dependencies: {  }
+name: 12_5_ratio_max_991_x_413
+label: '12:5 Ratio - Max 991 x 413'
+effects:
+  d1fb233c-4723-4431-b60b-41e889afe54f:
+    uuid: d1fb233c-4723-4431-b60b-41e889afe54f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 991
+      height: 413
+      anchor: center-center

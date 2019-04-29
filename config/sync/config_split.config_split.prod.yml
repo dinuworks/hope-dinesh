@@ -6,7 +6,9 @@ id: prod
 label: Prod
 description: 'Production environment specific configuration.'
 folder: ../config/splits/prod
-module: {  }
+module:
+  captcha: 0
+  recaptcha: 0
 theme: {  }
 blacklist:
   - system.performance

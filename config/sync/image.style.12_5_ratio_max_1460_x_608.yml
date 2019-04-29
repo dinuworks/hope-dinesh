@@ -1,0 +1,15 @@
+uuid: 7e19efe0-de4e-4ed6-83c2-7189abb13553
+langcode: en
+status: true
+dependencies: {  }
+name: 12_5_ratio_max_1460_x_608
+label: '12:5 Ratio - Max 1460 x 608'
+effects:
+  b4f714dc-3e69-4e18-bbb8-dffbc19a2e8b:
+    uuid: b4f714dc-3e69-4e18-bbb8-dffbc19a2e8b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1460
+      height: 608
+      anchor: center-center

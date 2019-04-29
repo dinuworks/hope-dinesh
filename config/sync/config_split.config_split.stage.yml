@@ -6,7 +6,9 @@ id: stage
 label: Stage
 description: 'Staging/UAT environment specific configuration.'
 folder: ../config/splits/stage
-module: {  }
+module:
+  captcha: 0
+  recaptcha: 0
 theme: {  }
 blacklist:
   - system.performance

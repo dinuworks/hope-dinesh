@@ -1,0 +1,15 @@
+uuid: 32b32f13-8af5-4a2e-8ed2-2d1a4593e4c2
+langcode: en
+status: true
+dependencies: {  }
+name: 12_5_ratio_max_730_x_304
+label: '12:5 Ratio - Max 730 x 304'
+effects:
+  039c23f8-c0d2-4e19-86cf-1bf8bc5f0dcc:
+    uuid: 039c23f8-c0d2-4e19-86cf-1bf8bc5f0dcc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 730
+      height: 304
+      anchor: center-center

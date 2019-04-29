@@ -1,0 +1,15 @@
+uuid: a6bc571d-2ec8-46a0-aecf-0e42ef6e47e7
+langcode: en
+status: true
+dependencies: {  }
+name: 12_5_ratio_max_350_x_146
+label: '12:5 Ratio - Max 350 x 146'
+effects:
+  1508ec74-b99e-4bf8-bfbb-5b9f0bc6d1a5:
+    uuid: 1508ec74-b99e-4bf8-bfbb-5b9f0bc6d1a5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 350
+      height: 146
+      anchor: center-center

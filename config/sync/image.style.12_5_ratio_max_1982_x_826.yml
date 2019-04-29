@@ -1,0 +1,15 @@
+uuid: 36b70301-9604-4967-aa2e-5b9449917f03
+langcode: en
+status: true
+dependencies: {  }
+name: 12_5_ratio_max_1982_x_826
+label: '12:5 Ratio - Max 1982 x 826'
+effects:
+  f4413e97-bcaf-467b-a16f-5c7152c4ee85:
+    uuid: f4413e97-bcaf-467b-a16f-5c7152c4ee85
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1982
+      height: 826
+      anchor: center-center
