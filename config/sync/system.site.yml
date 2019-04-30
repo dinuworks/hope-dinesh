@@ -1,11 +1,11 @@
-uuid: 594d8496-a818-4c32-a1f3-a565141329bd
-name: 'Apigee D8 Dev Portal'
-mail: info@example.com
+uuid: 03133065-b768-4163-b805-f97a35789152
+name: hope-dinesh
+mail: dinesh.pugazhenthi@brank.as
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/1
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en

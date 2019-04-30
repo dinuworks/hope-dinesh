@@ -1,17 +1,9 @@
-uuid: 4d4acff2-4c96-4fca-ae6b-b357b04b3dfb
+uuid: 81ce96a2-8e3f-4005-8577-846dffd9800b
 langcode: en
 status: true
-dependencies:
-  module:
-    - menu_ui
-third_party_settings:
-  menu_ui:
-    available_menus:
-      - footer
-      - main
-    parent: 'main:'
+dependencies: {  }
 _core:
-  default_config_hash: FLnYNEOFyPHOO79AfbXqzGMZqlENS8dZ8-vDJW9e-Lk
+  default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: 'Basic page'
 type: page
 description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'

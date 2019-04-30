@@ -1,16 +1,16 @@
-uuid: 4d758db3-29a9-4dd5-900b-755c05d562fd
+uuid: 3e7ff90c-328b-4093-b4d7-5d9be219d623
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.user_picture
-    - image.style.1_1_48x48
+    - image.style.thumbnail
   module:
     - image
     - user
 _core:
-  default_config_hash: T3stMqftYuil_qYnDcHEHyAqE-qv_Zv05s_FHr-mdqo
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
 id: user.user.compact
 targetEntityType: user
 bundle: user
@@ -21,15 +21,9 @@ content:
     weight: 0
     region: content
     settings:
-      image_style: 1_1_48x48
+      image_style: thumbnail
       image_link: content
     third_party_settings: {  }
     label: hidden
 hidden:
-  display_name: true
-  email: true
-  langcode: true
   member_for: true
-  roles: true
-  timezone: true
-  username: true

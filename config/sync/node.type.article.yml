@@ -1,14 +1,7 @@
-uuid: e05e5a75-94a0-45f6-825d-8304803dc666
+uuid: a9220755-eceb-43c3-9cb3-448d25b932be
 langcode: en
 status: true
-dependencies:
-  module:
-    - menu_ui
-third_party_settings:
-  menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+dependencies: {  }
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Article

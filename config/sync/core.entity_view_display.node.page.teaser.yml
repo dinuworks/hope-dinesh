@@ -1,17 +1,16 @@
-uuid: 632646b0-aa29-4179-bc13-8a13daadd13a
+uuid: 361674fa-e85e-425f-95e3-e5fb99fa8647
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
-    - field.field.node.page.field_header
     - node.type.page
   module:
     - text
     - user
 _core:
-  default_config_hash: Cdv4w_6uO5d-2zrRLkK6xI62Gf15UFJLs6E7nsQSNPM
+  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
 id: node.page.teaser
 targetEntityType: node
 bundle: page
@@ -23,13 +22,9 @@ content:
     weight: 100
     region: content
     settings:
-      trim_length: 240
+      trim_length: 600
     third_party_settings: {  }
   links:
     weight: 101
     region: content
-    settings: {  }
-    third_party_settings: {  }
-hidden:
-  field_header: true
-  langcode: true
+hidden: {  }

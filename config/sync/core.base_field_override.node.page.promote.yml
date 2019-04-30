@@ -1,4 +1,4 @@
-uuid: a55be47a-bdc7-44ae-b0b2-3021925d6817
+uuid: 39f0e660-fdef-4e58-9324-a021a4333165
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ bundle: page
 label: 'Promoted to front page'
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
     value: 0

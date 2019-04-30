@@ -1,4 +1,4 @@
-uuid: 60b29652-598d-4423-b7b9-baef03f3cd2a
+uuid: 1e0a7896-7934-4502-80b1-c6f0c2ba4d84
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   module:
     - ckeditor
 _core:
-  default_config_hash: 0IrlxH_cv_b2L0leYOLltLbvqRt_iw3vOEnURkXUaVU
+  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
 format: full_html
 editor: ckeditor
 settings:
@@ -41,7 +41,6 @@ settings:
             - DrupalImage
             - Table
             - HorizontalRule
-            - DrupalFontAwesome
         -
           name: 'Block Formatting'
           items:
